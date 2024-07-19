@@ -1,21 +1,16 @@
 {
-  "name": "movie-app-backend",
+  "name": "clone",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-backend": "cd movie-app-backend && node index.js",
+    "start-frontend":"cd movie-app && npm start",
+    "build-frontend":"cd movie-app && npm run build",
+    "heroku-postbuild": "npm run build-frontend"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.5.0",
-    "nodemon": "^3.1.4"
-  }
+  "license": "ISC"
 }
